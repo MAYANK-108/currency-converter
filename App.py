@@ -11,7 +11,7 @@ usd = st.number_input("Enter(in USD):",min_value=1)
 target = st.selectbox("Convert to",["INR","EUR","GBP","JPY","CAD"])
 
 if st.button("Convert"):
-    url = "https://v6.exchangerate-api.com/v6/{api_key}/latest/USD"
+    url = f"https://v6.exchangerate-api.com/v6/{api_key}/latest/USD"
     response = requests.get(url)
 
     if response.status_code == 200:
