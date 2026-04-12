@@ -4,7 +4,11 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-api_key= os.getenv("EXCHANGE_API_KEY")
+
+try:
+    api_key = st.secrets["EXCHANGE_API_KEY"]
+except:
+    api_key = os.getenv("EXCHANGE_API_KEY")
 
 st.title("Currency Converter")
 usd = st.number_input("Enter(in USD):",min_value=1)
