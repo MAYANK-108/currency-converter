@@ -1,3 +1,4 @@
+<img width="1170" height="608" alt="Screenshot 2026-04-26 190822" src="https://github.com/user-attachments/assets/9796012c-ce36-49b0-932d-36e3d441c72e" />
 # 💱 Currency Converter
 
 A real-time currency converter web app built with **Python** and **Streamlit**, supporting 30+ world currencies.
